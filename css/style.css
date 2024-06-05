@@ -1,0 +1,78 @@
+html {
+    text-align: center;
+}
+  
+body {
+    margin-top:100px;
+    background: #3e3d3d;    /* Цвет фона */
+    color: #706d6b;         /* Цвет текста */
+    font-family: 'Titillium Web', sans-serif;   /*Шрифт*/ 
+    font-weight: 700;
+}
+
+/*----- Интерактивная подсветка выбора окна -----*/
+.radiobox>label:hover {
+    color: #f1f1f1;
+}
+
+/*----- Цвет окон ввода -----*/
+input[type="text"],[type="password"],[type="email"] {
+    background-color: #706d6b;
+    color: #ffe;
+}
+
+/*----- Стиль кнопок логин регистрация -----*/
+input[type="submit"] {
+    color: rgb(255, 255, 255);
+    height: 30px;
+    font-size:17px;
+    font-weight: 700;
+    font-family: 'Titillium Web', sans-serif;
+    background-color:#bd1e1e;
+    border:1px solid #9C1818;   
+    border-radius:7px;
+}
+
+/*----- убирает точки -----*/
+.radiobox>input[type="radio"] {
+    display: none;
+}
+
+/*----- переход по цветам -----*/
+.radiobox>input[type="radio"]:checked+label {
+    background-color: #4f4f4c;  
+}
+/*----- Стиль прямоугольника -----*/  
+.radiobox>div {
+    /* скрыть контент по умолчанию */
+    display: none;
+    color:#8a8686;
+    padding: 10px 15px;
+    border-radius: 30px; 
+    width: 350px; height: 350px; margin: 10px auto;
+    height: 200px;
+    background-color: #292927;
+}
+ 
+/*----- отобразить контент, связанный с выбранной кнопкой -----*/
+#ind:checked~#ind1,
+#reg:checked~#reg1   {
+    display: block;
+}
+
+/*----- интерактив нажатия -----*/
+.radiobox>label {
+    display: inline-block;  /*придает тегу одновременно свойства блочного и строчного элемента */
+    vertical-align: middle;
+    background-color: #000000;
+    padding: 2px 8px;
+    font-size: 20px;
+    line-height: 1.5;
+    border-radius: 4px;
+    transition: color 0.20s ease-in-out, background-color 0.20s ease-in-out, border-color 0.20s ease-in-out; /*плавный переход*/
+    margin-right: 6px;
+    cursor: pointer;        /*появление руки*/
+    margin-bottom: 10px;
+}
+  
+ 

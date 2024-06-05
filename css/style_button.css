@@ -1,0 +1,28 @@
+body {
+    margin-top:200px;
+    background: #3e3d3d;    /* Цвет фона */
+    color: #706d6b;         /* Цвет текста */
+    font-family: 'Titillium Web', sans-serif;   /*Шрифт*/ 
+    font-weight: 700;
+    text-align: center;
+}
+  
+.button {
+    border-radius:10px;
+    color:#FFF;
+    display:inline-block;
+    font-size:40px;
+    padding:6px 10px;
+    text-decoration:none;
+    background-color:#E62525;
+    border:1px solid #9C1818;
+    background:-webkit-gradient( linear, left bottom, left top, color-stop(0.06, #9c1818), color-stop(0.77, #e62525) );
+    background:-moz-linear-gradient( center bottom, #9c1818 6%, #e62525 77% );
+}
+  
+.button:hover {
+    background-color:#C42020;
+    text-decoration:none;
+    background:-webkit-gradient( linear, left bottom, left top, color-stop(0.06, #780d0d), color-stop(0.77, #cf1717) );
+    background:-moz-linear-gradient( center bottom, #780d0d 6%, #cf1717 77% );
+}
